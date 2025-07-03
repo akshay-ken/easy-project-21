@@ -1,6 +1,6 @@
 import { FooterSection } from "./FooterSection";
 
-export function IntroSection() {
+export function IntroSection({ onClick }) {
   return (
     <>
       <section className="md:text-left text-center md:p-12">
@@ -12,7 +12,10 @@ export function IntroSection() {
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
-        <button className="font-one block shadow-black shadow-lg bg-white text-xl text-Violet w-2/3 mx-auto p-4 rounded-full mb-16 md:w-1/3 md:ml-0 hover:bg-Soft-Magenta">
+        <button
+          onClick={() => onClick(true)}
+          className="font-one block shadow-black shadow-lg bg-white text-xl text-Violet w-2/3 mx-auto p-4 rounded-full mb-16 md:w-1/3 md:ml-0 hover:bg-Soft-Magenta"
+        >
           Register
         </button>
       </section>
